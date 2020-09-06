@@ -2,10 +2,10 @@
     <ul class="sidenav app-sidenav" :class="{open: value}">
       
       <router-link 
-      v-for ="link in links"
+        tag="li" 
+        active-class="active" 
+        v-for ="link in links"
        :key="link.url"
-       tag="li" 
-       active-class="active" 
        :to="link.url"
        :exact="link.exact"
        > 
